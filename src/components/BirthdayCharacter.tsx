@@ -85,7 +85,7 @@ export default function BirthdayCharacter() {
             <span
               style={{
                 display: 'block',
-                transform: `translate(${window?.innerWidth > 768 ? 250 : 160 * Math.cos((deg * Math.PI) / 180)}px, ${window?.innerWidth > 768 ? 250 : 160 * Math.sin((deg * Math.PI) / 180)}px)`,
+                transform: `translate(${typeof window !== 'undefined' && window.innerWidth > 768 ? 250 * Math.cos((deg * Math.PI) / 180) : 160 * Math.cos((deg * Math.PI) / 180)}px, ${typeof window !== 'undefined' && window.innerWidth > 768 ? 250 * Math.sin((deg * Math.PI) / 180) : 160 * Math.sin((deg * Math.PI) / 180)}px)`,
               }}
             >
               {['✨', '⭐', '💖', '🌟', '✦', '🎀'][i]}

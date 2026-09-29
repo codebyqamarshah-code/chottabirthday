@@ -161,6 +161,7 @@ export default function ThreeCanvas() {
         />
 
         <CakeModel />
+        {/* @ts-ignore */}
         <OrbitControls enableZoom={false} enablePan={false} autoRotate={false} maxPolarAngle={Math.PI / 1.5} minPolarAngle={Math.PI / 3} />
       </Canvas>
     </div>
